@@ -14,17 +14,20 @@
 
 
 // second soln using for loop
-// function reverse(str) {
-//     let reversed = '';
-//     for (character of str) {
-//         reversed = character + reversed;
-//     }
-//     return reversed;
-// }
-
-// third soln using reduce helper
 function reverse(str) {
-    return str.split('').reduce((rev, char) => char + rev, '');
+    let reversed = '';
+    for (character of str) {
+        reversed = character + reversed;
+        debugger;
+    }
+    return reversed;
 }
+reverse('asdf');
+// third soln using reduce helper
+// function reverse(str) {
+//     // debugger; // pause the execution
+//     return str.split('').reduce((rev, char) => char + rev, '');
+// }
+// reverse('asdf');
 
 module.exports = reverse;
